@@ -1,0 +1,5 @@
+.root_active {
+    composes: root_active from '../Mask/mask.module.css';
+
+    @apply opacity-25;
+}

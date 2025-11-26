@@ -1,0 +1,24 @@
+.root {
+    --stroke: rgb(var(--venia-global-color-text));
+
+    composes: flex from global;
+    composes: h-[3rem] from global;
+    composes: items-center from global;
+    composes: ml-18 from global;
+    composes: w-[3rem] from global;
+    grid-area: primary;
+    composes: sm_justify-self-start from global;
+    composes: ml-6 from global;
+}
+
+@media screen(sm) {
+    .root {
+        grid-column: 3 / 4;
+    }
+}
+
+@media screen(lg) {
+    .root {
+        grid-column: 2 / 3;
+    }
+}

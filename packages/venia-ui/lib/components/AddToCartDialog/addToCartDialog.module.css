@@ -1,0 +1,53 @@
+.root {
+    composes: grid from global;
+    composes: gap-xs from global;
+    composes: grid-cols-auto from global;
+
+    composes: lg_grid-cols-2 from global;
+}
+
+.image {
+    composes: h-full from global;
+    composes: object-contain from global;
+    composes: w-full from global;
+}
+
+.detailsContainer {
+    composes: content-start from global;
+    composes: gap-y-xs from global;
+    composes: grid from global;
+}
+
+.name {
+    composes: font-bold from global;
+    composes: font-serif from global;
+    composes: text-xl from global;
+}
+
+.price {
+    composes: font-semibold from global;
+
+    composes: empty_bg-subtle from global;
+    composes: empty_w-16 from global;
+    composes: empty_min-h-4 from global;
+}
+
+.optionTitle {
+    composes: border-t from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: font-semibold from global;
+    composes: px-0 from global;
+    composes: py-xs from global;
+}
+
+.dialogHeaderText {
+    composes: headerText from '../Dialog/dialog.module.css';
+
+    @apply overflow-visible;
+}
+
+.titleContainer {
+    composes: leading-none from global;
+    composes: w-fit from global;
+}

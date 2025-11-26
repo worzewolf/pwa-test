@@ -1,0 +1,139 @@
+.root h1,
+.root h2,
+.root h3,
+.root h4,
+.root h5,
+.root h6 {
+    @apply mb-2;
+    @apply leading-tight;
+}
+
+.root h1 {
+    @apply mt-3;
+    @apply text-3xl/tight;
+    @apply font-normal;
+}
+
+.root h2 {
+    @apply mt-4;
+    @apply text-2xl/tight;
+    @apply font-normal;
+}
+
+.root h3 {
+    @apply mt-4;
+    @apply text-xl/tight;
+    @apply font-normal;
+}
+
+.root h4 {
+    @apply mt-4;
+    @apply text-lg/tight;
+    @apply font-semibold;
+}
+
+.root h5 {
+    @apply mt-4;
+    @apply text-base/tight;
+    @apply font-semibold;
+}
+
+.root h6 {
+    @apply mt-4;
+    @apply text-sm/tight;
+    @apply font-semibold;
+}
+
+.root p {
+    @apply mb-4;
+    @apply leading-normal;
+}
+
+.root p:last-child {
+    @apply mb-0;
+}
+
+.root img {
+    @apply max-w-full;
+    @apply my-4;
+    @apply mx-0;
+}
+
+.root ol,
+.root ul {
+    @apply pl-6;
+    @apply my-4;
+    @apply leading-normal;
+}
+
+.root p + ol,
+.root p + ul {
+    @apply mt-0;
+}
+
+.root ol {
+    @apply list-decimal;
+}
+
+.root ul {
+    @apply list-disc;
+}
+
+.root a {
+    @apply underline;
+}
+
+.root blockquote {
+    @apply my-4;
+    @apply mx-0;
+    @apply text-xl;
+    @apply italic;
+}
+
+.root table {
+    @apply w-full;
+    @apply text-left;
+}
+
+.root pre {
+    @apply p-4;
+    @apply border;
+    @apply border-solid;
+    @apply border-subtle;
+    @apply bg-gray-900;
+}
+
+.root :global .cms-content-important {
+    @apply p-4;
+    @apply border;
+    @apply border-solid;
+    @apply border-subtle;
+    @apply bg-gray-900;
+    @apply text-lg;
+}
+
+@media screen(md) {
+    .root h1 {
+        @apply text-5xl/tight;
+    }
+
+    .root h2 {
+        @apply text-4xl/tight;
+    }
+
+    .root h3 {
+        @apply text-3xl/tight;
+    }
+
+    .root h4 {
+        @apply text-2xl/tight;
+    }
+
+    .root h5 {
+        @apply text-lg/tight;
+    }
+
+    .root h6 {
+        @apply text-base/tight;
+    }
+}

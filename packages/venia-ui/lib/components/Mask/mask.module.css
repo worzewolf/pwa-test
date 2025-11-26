@@ -1,0 +1,25 @@
+.root {
+    composes: appearance-none from global;
+    composes: bg-black from global;
+    composes: block from global;
+    composes: cursor-pointer from global;
+    composes: fixed from global;
+    composes: h-full from global;
+    composes: left-0 from global;
+    composes: opacity-0 from global;
+    composes: top-0 from global;
+    composes: w-full from global;
+    composes: z-mask from global;
+    composes: invisible from global;
+    transition-duration: 192ms;
+    transition-property: opacity, visibility;
+    transition-timing-function: linear;
+}
+
+.root_active {
+    composes: root;
+
+    @apply opacity-50;
+    @apply visible;
+    transition-duration: 224ms;
+}

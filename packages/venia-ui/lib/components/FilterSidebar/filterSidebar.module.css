@@ -1,0 +1,53 @@
+.root {
+    composes: bg-white from global;
+    composes: bottom-0 from global;
+    composes: hidden from global;
+    composes: max-w-modal from global;
+    composes: w-full from global;
+    composes: z-foreground from global;
+    grid-template-rows: 1fr 7rem;
+
+    composes: lg_grid from global;
+}
+
+.body {
+    composes: overflow-auto from global;
+}
+
+.header {
+    composes: flex from global;
+    composes: justify-between from global;
+    composes: pb-0 from global;
+    composes: pt-5 from global;
+    composes: px-5 from global;
+}
+
+.headerTitle {
+    composes: flex from global;
+    composes: items-center from global;
+    composes: leading-none from global;
+    composes: text-lg from global;
+}
+
+.action {
+    composes: pb-0 from global;
+    composes: pt-xs from global;
+    composes: px-xs from global;
+}
+
+.action button {
+    @apply text-sm;
+    @apply no-underline;
+}
+
+.blocks {
+    composes: pb-0 from global;
+    composes: pt-xs from global;
+    composes: px-xs from global;
+}
+
+.blocks > li:last-child {
+    @apply border-b-2;
+    @apply border-solid;
+    @apply border-subtle;
+}

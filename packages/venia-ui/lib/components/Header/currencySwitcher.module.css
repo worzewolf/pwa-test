@@ -1,0 +1,107 @@
+.root {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: justify-items-start from global;
+    composes: max-w-site from global;
+    composes: mx-auto from global;
+    composes: my-0 from global;
+    composes: p-0 from global;
+    composes: relative from global;
+
+    composes: sm_justify-items-end from global;
+}
+
+.trigger {
+    composes: gap-x-2xs from global;
+    composes: grid from global;
+    composes: grid-cols-autoFirst from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+}
+
+.menu {
+    composes: absolute from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+    composes: bottom-md from global;
+    composes: left-xs from global;
+    composes: max-h-[24rem] from global;
+    composes: opacity-0 from global;
+    composes: overflow-auto from global;
+    composes: right-auto from global;
+    composes: rounded from global;
+    composes: shadow-menu from global;
+    composes: top-auto from global;
+    composes: z-menu from global;
+    composes: invisible from global;
+    transform: translate3d(0, 8px, 0);
+    transition-duration: 192ms;
+    transition-timing-function: var(--venia-global-anim-out);
+    transition-property: opacity, transform, visibility;
+
+    @apply invisible;
+
+    composes: sm_bottom-auto from global;
+    composes: sm_left-auto from global;
+    composes: sm_right-xs from global;
+    composes: sm_top-md from global;
+}
+
+@media screen(sm) {
+    .menu {
+        transform: translate3d(0, -8px, 0);
+    }
+}
+
+.menu_open {
+    composes: menu;
+
+    @apply opacity-100;
+    composes: p-0 from global;
+    @apply visible;
+    transform: translate3d(0, 4px, 0);
+    transition-duration: 224ms;
+    transition-timing-function: var(--venia-global-anim-in);
+}
+
+.menuItem {
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+
+    composes: hover_bg-subtle from global;
+
+    composes: last_border-none from global;
+}
+
+.symbol {
+    composes: mr-2xs from global;
+}
+
+.root:last-child:not(:only-child) {
+    @apply pl-0;
+    @apply grid-flow-col;
+
+    @apply before_border-l;
+    @apply before_border-solid;
+    @apply before_border-base;
+    @apply before_h-4;
+    @apply before_w-4;
+}
+
+@media screen(-sm) {
+    .root:only-child {
+        grid-column: 2;
+    }
+
+    .root:last-child .menu {
+        @apply right-4;
+        @apply left-auto;
+    }
+
+    .menu_open {
+        @apply -translate-y-1;
+    }
+}

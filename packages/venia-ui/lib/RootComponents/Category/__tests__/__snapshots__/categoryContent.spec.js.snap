@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filter button/modal does not render if there are no filters 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`filter button/modal renders when there are filters 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`filter sidebar does not render if not in viewport 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`filter sidebar renders when in viewport 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`renders empty page 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Empty Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`renders loading indicator if no data and loading 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`renders the correct tree 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`sort button/container does not render if there are no products 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`sort button/container renders when there are products 1`] = `
+<div>
+  <Breadcrumbs
+    categoryId={42}
+  />
+  Title
+  <article
+    className="root"
+  >
+    <div
+      className="categoryHeader"
+    >
+      <h1
+        aria-live="polite"
+        className="title"
+      >
+        <div
+          className="categoryTitle"
+        >
+          <div>
+            Name
+          </div>
+        </div>
+      </h1>
+    </div>
+  </article>
+</div>
+`;

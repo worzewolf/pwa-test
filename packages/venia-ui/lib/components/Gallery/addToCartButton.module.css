@@ -1,0 +1,24 @@
+.root {
+    composes: root_highPriority from '../Button/button.module.css';
+
+    @apply min-w-[6.125rem];
+    composes: -ml-2xs from global;
+    @apply py-0;
+    composes: self-center from global;
+    min-height: 2rem;
+
+    @apply sm_min-w-[8rem];
+}
+
+.icon {
+    composes: inline from global;
+    composes: stroke-white from global;
+
+    composes: xs_hidden from global;
+}
+
+.text {
+    composes: hidden from global;
+
+    composes: xs_inline from global;
+}

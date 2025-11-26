@@ -1,0 +1,18 @@
+.root {
+    composes: leading-tight from global;
+    composes: px-2xs from global;
+    composes: py-0 from global;
+    composes: text-sm from global;
+}
+
+.root p {
+    @apply m-0;
+    @apply mb-4;
+}
+
+.root ul {
+    @apply list-disc;
+    @apply m-0;
+    @apply mb-4;
+    @apply pl-10;
+}

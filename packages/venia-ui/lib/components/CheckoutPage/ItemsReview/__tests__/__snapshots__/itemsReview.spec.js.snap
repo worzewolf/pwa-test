@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test 1`] = `
+<div>
+  <div>
+    <div>
+      <span>
+        7
+      </span>
+      <mock-FormattedMessage
+        defaultMessage=" items in your order"
+        id="checkoutPage.itemsInYourOrder"
+      />
+    </div>
+    <div>
+      <div
+        className="undefined undefined"
+      >
+        <img
+          alt="Jillian Top"
+          aria-hidden="true"
+          className="undefined undefined"
+          loading="eager"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIHZpZXdCb3g9Ii0yNSAtMjUgMzEyIDMxMiI+CiAgICA8ZyBpZD0iTGF5ZXJfMi0yIj4KICAgICAgICA8cGF0aCBjbGFzcz0ic3QwIiBzdHlsZT0iZmlsbDogI2YwZjBmMDsgZmlsbC1ydWxlOiBldmVub2RkOyIgZD0iTTM2LDE4OS40di0xMDkuMWMwLTAuNywwLjQtMS42LDEuMS0ybDk0LjctNTcuMWMwLjctMC41LDEuNy0wLjUsMi41LDBsOTEuNSw1N2MwLjcsMC40LDEuMSwxLjEsMS4xLDJ2MTA3LjljMCwwLjctMC40LDEuNS0xLjEsMmwtMTkuMywxMi42Yy0xLjUsMS0zLjYsMC0zLjYtMnYtMTA1LjljMC0wLjctMC40LTEuNi0xLjEtMmwtNjcuNS00MS4zYy0wLjctMC41LTEuNi0wLjUtMi4zLDBsLTY5LjYsNDEuM2MtMC43LDAuNC0xLjEsMS4xLTEuMSwydjEwNS45YzAsMS45LTIsMy0zLjYsMmwtMjEuNS0xMy41aDB2LjJaTTg2LDExMC45djEwNi4zYzAsMC45LDAuNCwxLjYsMS4xLDJsNDQuNSwyNi43YzAuNywwLjUsMS43LDAuNCwyLjUsMGw0Mi41LTI2LjdjMC43LTAuNCwxLjEtMS4xLDEuMS0ydi0xMDUuOGMwLTAuNy0wLjQtMS41LTEuMS0ybC0yOC43LTE3LjljLTEuNS0xLTMuNiwwLjEtMy42LDJ2MTIxLjZjMCwwLjctMC40LDEuNS0xLjEsMmwtOS4zLDUuOWMtMC43LDAuNS0xLjYsMC41LTIuMywwbC0xMS4xLTUuOWMtMC43LTAuNC0xLjItMS4yLTEuMi0yLjF2LTEyMS43YzAtMS43LTItMy0zLjUtMmwtMjguOCwxNi4yYy0wLjcsMC40LTEuMSwxLjEtMS4xLDJ2MS41aC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
+          style={
+            Object {
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+        <img
+          alt="Jillian Top"
+          className="undefined undefined"
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          sizes="100px"
+          src="https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=100&height=125&fit=cover"
+          srcSet="https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=40&height=50&fit=cover 40w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=80&height=100&fit=cover 80w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=160&height=200&fit=cover 160w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=320&height=400&fit=cover 320w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=640&height=800&fit=cover 640w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=960&height=1200&fit=cover 960w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=1280&height=1600&fit=cover 1280w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=1600&height=2000&fit=cover 1600w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/t/vt12-kh_main_2.jpg?auto=webp&format=pjpg&width=2560&height=3200&fit=cover 2560w"
+          style={
+            Object {
+              "--height": "125px",
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+      </div>
+      <span>
+        Jillian Top
+      </span>
+      <dl>
+        <div>
+          <dt>
+            Fashion Color :
+          </dt>
+          <dd>
+            Peach
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Fashion Size :
+          </dt>
+          <dd>
+            M
+          </dd>
+        </div>
+      </dl>
+      <span>
+        <mock-FormattedMessage
+          defaultMessage="Qty : {quantity}"
+          id="checkoutPage.quantity"
+          values={
+            Object {
+              "quantity": 3,
+            }
+          }
+        />
+      </span>
+    </div>
+    <div>
+      <div
+        className="undefined undefined"
+      >
+        <img
+          alt="Juno Sweater"
+          aria-hidden="true"
+          className="undefined undefined"
+          loading="eager"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIHZpZXdCb3g9Ii0yNSAtMjUgMzEyIDMxMiI+CiAgICA8ZyBpZD0iTGF5ZXJfMi0yIj4KICAgICAgICA8cGF0aCBjbGFzcz0ic3QwIiBzdHlsZT0iZmlsbDogI2YwZjBmMDsgZmlsbC1ydWxlOiBldmVub2RkOyIgZD0iTTM2LDE4OS40di0xMDkuMWMwLTAuNywwLjQtMS42LDEuMS0ybDk0LjctNTcuMWMwLjctMC41LDEuNy0wLjUsMi41LDBsOTEuNSw1N2MwLjcsMC40LDEuMSwxLjEsMS4xLDJ2MTA3LjljMCwwLjctMC40LDEuNS0xLjEsMmwtMTkuMywxMi42Yy0xLjUsMS0zLjYsMC0zLjYtMnYtMTA1LjljMC0wLjctMC40LTEuNi0xLjEtMmwtNjcuNS00MS4zYy0wLjctMC41LTEuNi0wLjUtMi4zLDBsLTY5LjYsNDEuM2MtMC43LDAuNC0xLjEsMS4xLTEuMSwydjEwNS45YzAsMS45LTIsMy0zLjYsMmwtMjEuNS0xMy41aDB2LjJaTTg2LDExMC45djEwNi4zYzAsMC45LDAuNCwxLjYsMS4xLDJsNDQuNSwyNi43YzAuNywwLjUsMS43LDAuNCwyLjUsMGw0Mi41LTI2LjdjMC43LTAuNCwxLjEtMS4xLDEuMS0ydi0xMDUuOGMwLTAuNy0wLjQtMS41LTEuMS0ybC0yOC43LTE3LjljLTEuNS0xLTMuNiwwLjEtMy42LDJ2MTIxLjZjMCwwLjctMC40LDEuNS0xLjEsMmwtOS4zLDUuOWMtMC43LDAuNS0xLjYsMC41LTIuMywwbC0xMS4xLTUuOWMtMC43LTAuNC0xLjItMS4yLTEuMi0yLjF2LTEyMS43YzAtMS43LTItMy0zLjUtMmwtMjguOCwxNi4yYy0wLjcsMC40LTEuMSwxLjEtMS4xLDJ2MS41aC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
+          style={
+            Object {
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+        <img
+          alt="Juno Sweater"
+          className="undefined undefined"
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          sizes="100px"
+          src="https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=100&height=125&fit=cover"
+          srcSet="https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=40&height=50&fit=cover 40w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=80&height=100&fit=cover 80w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=160&height=200&fit=cover 160w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=320&height=400&fit=cover 320w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=640&height=800&fit=cover 640w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=960&height=1200&fit=cover 960w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=1280&height=1600&fit=cover 1280w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=1600&height=2000&fit=cover 1600w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/s/vsw02-pe_main_2.jpg?auto=webp&format=pjpg&width=2560&height=3200&fit=cover 2560w"
+          style={
+            Object {
+              "--height": "125px",
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+      </div>
+      <span>
+        Juno Sweater
+      </span>
+      <dl>
+        <div>
+          <dt>
+            Fashion Color :
+          </dt>
+          <dd>
+            Rain
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Fashion Size :
+          </dt>
+          <dd>
+            XS
+          </dd>
+        </div>
+      </dl>
+      <span>
+        <mock-FormattedMessage
+          defaultMessage="Qty : {quantity}"
+          id="checkoutPage.quantity"
+          values={
+            Object {
+              "quantity": 1,
+            }
+          }
+        />
+      </span>
+    </div>
+    <div>
+      <div
+        className="undefined undefined"
+      >
+        <img
+          alt="Angelina Tank Dress"
+          aria-hidden="true"
+          className="undefined undefined"
+          loading="eager"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIHZpZXdCb3g9Ii0yNSAtMjUgMzEyIDMxMiI+CiAgICA8ZyBpZD0iTGF5ZXJfMi0yIj4KICAgICAgICA8cGF0aCBjbGFzcz0ic3QwIiBzdHlsZT0iZmlsbDogI2YwZjBmMDsgZmlsbC1ydWxlOiBldmVub2RkOyIgZD0iTTM2LDE4OS40di0xMDkuMWMwLTAuNywwLjQtMS42LDEuMS0ybDk0LjctNTcuMWMwLjctMC41LDEuNy0wLjUsMi41LDBsOTEuNSw1N2MwLjcsMC40LDEuMSwxLjEsMS4xLDJ2MTA3LjljMCwwLjctMC40LDEuNS0xLjEsMmwtMTkuMywxMi42Yy0xLjUsMS0zLjYsMC0zLjYtMnYtMTA1LjljMC0wLjctMC40LTEuNi0xLjEtMmwtNjcuNS00MS4zYy0wLjctMC41LTEuNi0wLjUtMi4zLDBsLTY5LjYsNDEuM2MtMC43LDAuNC0xLjEsMS4xLTEuMSwydjEwNS45YzAsMS45LTIsMy0zLjYsMmwtMjEuNS0xMy41aDB2LjJaTTg2LDExMC45djEwNi4zYzAsMC45LDAuNCwxLjYsMS4xLDJsNDQuNSwyNi43YzAuNywwLjUsMS43LDAuNCwyLjUsMGw0Mi41LTI2LjdjMC43LTAuNCwxLjEtMS4xLDEuMS0ydi0xMDUuOGMwLTAuNy0wLjQtMS41LTEuMS0ybC0yOC43LTE3LjljLTEuNS0xLTMuNiwwLjEtMy42LDJ2MTIxLjZjMCwwLjctMC40LDEuNS0xLjEsMmwtOS4zLDUuOWMtMC43LDAuNS0xLjYsMC41LTIuMywwbC0xMS4xLTUuOWMtMC43LTAuNC0xLjItMS4yLTEuMi0yLjF2LTEyMS43YzAtMS43LTItMy0zLjUtMmwtMjguOCwxNi4yYy0wLjcsMC40LTEuMSwxLjEtMS4xLDJ2MS41aC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
+          style={
+            Object {
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+        <img
+          alt="Angelina Tank Dress"
+          className="undefined undefined"
+          loading="lazy"
+          onError={[Function]}
+          onLoad={[Function]}
+          sizes="100px"
+          src="https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=100&height=125&fit=cover"
+          srcSet="https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=40&height=50&fit=cover 40w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=80&height=100&fit=cover 80w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=160&height=200&fit=cover 160w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=320&height=400&fit=cover 320w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=640&height=800&fit=cover 640w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=960&height=1200&fit=cover 960w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=1280&height=1600&fit=cover 1280w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=1600&height=2000&fit=cover 1600w,
+https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/media/catalog/product/cache/d3ba9f7bcd3b0724e976dc5144b29c7d/v/d/vd01-ll_main_2.jpg?auto=webp&format=pjpg&width=2560&height=3200&fit=cover 2560w"
+          style={
+            Object {
+              "--height": "125px",
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+      </div>
+      <span>
+        Angelina Tank Dress
+      </span>
+      <dl>
+        <div>
+          <dt>
+            Fashion Color :
+          </dt>
+          <dd>
+            Lilac
+          </dd>
+        </div>
+        <div>
+          <dt>
+            Fashion Size :
+          </dt>
+          <dd>
+            L
+          </dd>
+        </div>
+      </dl>
+      <span>
+        <mock-FormattedMessage
+          defaultMessage="Qty : {quantity}"
+          id="checkoutPage.quantity"
+          values={
+            Object {
+              "quantity": 3,
+            }
+          }
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;

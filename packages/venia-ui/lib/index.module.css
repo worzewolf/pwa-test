@@ -1,0 +1,104 @@
+@import './tokens.module.css';
+
+:global(*) {
+    @apply box-border;
+}
+
+:global(html) {
+    @apply text-[100%];
+    @apply font-normal;
+    @apply leading-none;
+    @apply antialiased;
+}
+
+:global(html[data-scroll-lock='true']),
+:global(html[data-scroll-lock='true'] body) {
+    @apply h-full;
+    @apply overflow-hidden;
+    @apply fixed;
+    @apply w-full;
+}
+
+:global(body),
+:global(button),
+:global(input),
+:global(select),
+:global(textarea) {
+    @apply text-gray-900;
+}
+
+:global(body) {
+    @apply m-0;
+    @apply p-0;
+}
+
+:global(h1),
+:global(h2),
+:global(h3),
+:global(h4),
+:global(h5),
+:global(h6) {
+    @apply text-base;
+    @apply font-normal;
+    @apply m-0;
+}
+
+:global(h1) {
+    @apply text-xl;
+}
+
+:global(h2) {
+    @apply text-lg;
+}
+
+:global(a) {
+    @apply text-current;
+    @apply no-underline;
+}
+
+:global(p) {
+    @apply m-0;
+}
+
+:global(dl),
+:global(ol),
+:global(ul) {
+    @apply list-none;
+    @apply m-0;
+    @apply p-0;
+}
+
+:global(dd),
+:global(dt) {
+    @apply m-0;
+}
+
+:global(button) {
+    @apply bg-transparent;
+    @apply border-0;
+    @apply cursor-pointer;
+    @apply text-[100%];
+    @apply p-0;
+    @apply touch-manipulation;
+    @apply select-none;
+    @apply appearance-none;
+}
+
+:global(button:disabled) {
+    @apply cursor-default;
+    @apply touch-none;
+}
+
+:global(.braintree-sheet__content--form
+        .braintree-form__field-group
+        .braintree-form__field
+        .braintree-form__hosted-field
+        input.braintree-form__raw-input) {
+    color: #8f8f8f !important;
+}
+
+:global(.braintree-sheet__content--form
+        .braintree-form__field-group
+        .braintree-form__descriptor) {
+    color: #757575 !important;
+}

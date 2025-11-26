@@ -1,0 +1,68 @@
+.root {
+    --stroke: var(--venia-global-color-gray-600);
+
+    composes: gap-3 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-items-center from global;
+    composes: leading-normal from global;
+    composes: text-colorDefault from global;
+    grid-template-areas: 'input label';
+    grid-template-columns: min-content 1fr;
+}
+
+.input {
+    composes: appearance-none from global;
+    composes: bg-transparent from global;
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-transparent from global;
+    composes: cursor-pointer from global;
+    composes: h-[1.5rem] from global;
+    composes: rounded from global;
+    composes: w-[1.5rem] from global;
+    grid-area: input;
+
+    /* TODO @TW: review, replaces input:disabled. Check if working. */
+    composes: disabled_cursor-not-allowed from global;
+
+    composes: active_enabled_shadow-radioActive from global;
+    composes: active_enabled_outline-0 from global;
+
+    composes: focus_enabled_shadow-radioFocus from global;
+    composes: focus_enabled_outline-0 from global;
+}
+
+.icon {
+    composes: h-[1.5rem] from global;
+    composes: pointer-events-none from global;
+    composes: w-[1.5rem] from global;
+    grid-area: input;
+}
+
+.icon svg {
+    stroke: rgb(var(--stroke));
+}
+
+.label {
+    composes: cursor-pointer from global;
+    composes: justify-self-start from global;
+    composes: text-colorDefault from global;
+    grid-area: label;
+}
+
+/* When the input is disabled, update the cursor on the sibling label element. */
+.input:disabled ~ .label {
+    @apply cursor-default;
+}
+
+.input:checked:enabled + .icon {
+    --stroke: var(--venia-brand-color-1-700);
+}
+
+.input_shimmer {
+    composes: h-[1.5rem] from global;
+    composes: rounded from global;
+    composes: w-[1.5rem] from global;
+}

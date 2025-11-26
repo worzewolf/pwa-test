@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders if \`items\` is an array of objects 1`] = `
+<div
+  aria-busy="false"
+  className="root"
+>
+  <div
+    className="items"
+  >
+    <div
+      className="root"
+    >
+      <div
+        className="root container"
+      >
+        <img
+          alt="Test Product 1"
+          aria-hidden="true"
+          className="image placeholder_layoutOnly"
+          height={375}
+          loading="eager"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIHZpZXdCb3g9Ii0yNSAtMjUgMzEyIDMxMiI+CiAgICA8ZyBpZD0iTGF5ZXJfMi0yIj4KICAgICAgICA8cGF0aCBjbGFzcz0ic3QwIiBzdHlsZT0iZmlsbDogI2YwZjBmMDsgZmlsbC1ydWxlOiBldmVub2RkOyIgZD0iTTM2LDE4OS40di0xMDkuMWMwLTAuNywwLjQtMS42LDEuMS0ybDk0LjctNTcuMWMwLjctMC41LDEuNy0wLjUsMi41LDBsOTEuNSw1N2MwLjcsMC40LDEuMSwxLjEsMS4xLDJ2MTA3LjljMCwwLjctMC40LDEuNS0xLjEsMmwtMTkuMywxMi42Yy0xLjUsMS0zLjYsMC0zLjYtMnYtMTA1LjljMC0wLjctMC40LTEuNi0xLjEtMmwtNjcuNS00MS4zYy0wLjctMC41LTEuNi0wLjUtMi4zLDBsLTY5LjYsNDEuM2MtMC43LDAuNC0xLjEsMS4xLTEuMSwydjEwNS45YzAsMS45LTIsMy0zLjYsMmwtMjEuNS0xMy41aDB2LjJaTTg2LDExMC45djEwNi4zYzAsMC45LDAuNCwxLjYsMS4xLDJsNDQuNSwyNi43YzAuNywwLjUsMS43LDAuNCwyLjUsMGw0Mi41LTI2LjdjMC43LTAuNCwxLjEtMS4xLDEuMS0ydi0xMDUuOGMwLTAuNy0wLjQtMS41LTEuMS0ybC0yOC43LTE3LjljLTEuNS0xLTMuNiwwLjEtMy42LDJ2MTIxLjZjMCwwLjctMC40LDEuNS0xLjEsMmwtOS4zLDUuOWMtMC43LDAuNS0xLjYsMC41LTIuMywwbC0xMS4xLTUuOWMtMC43LTAuNC0xLjItMS4yLTEuMi0yLjF2LTEyMS43YzAtMS43LTItMy0zLjUtMmwtMjguOCwxNi4yYy0wLjcsMC40LTEuMSwxLjEtMS4xLDJ2MS41aC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
+          style={
+            Object {
+              "--height": "375px",
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+        <img
+          alt="Test Product 1"
+          className="image loaded"
+          loading="lazy"
+          onError={[MockFunction]}
+          onLoad={[MockFunction]}
+          sizes="(max-width: 640px) 300px, 840px"
+          src="/test/product/1.png"
+          srcSet="/test/product/1.png 40w,
+/test/product/1.png 80w,
+/test/product/1.png 160w,
+/test/product/1.png 320w,
+/test/product/1.png 640w,
+/test/product/1.png 960w,
+/test/product/1.png 1280w,
+/test/product/1.png 1600w,
+/test/product/1.png 2560w"
+          style={
+            Object {
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+      </div>
+      <span>
+        Test Product 1
+      </span>
+      <div
+        className="price"
+      >
+        <span>
+          $
+        </span>
+        <span>
+          100
+        </span>
+        <span>
+          .
+        </span>
+        <span>
+          00
+        </span>
+      </div>
+      <div
+        className="actionsContainer"
+      >
+         
+        <mock-AddToCartButton
+          item={
+            Object {
+              "__typename": "SimpleProduct",
+              "id": 1,
+              "name": "Test Product 1",
+              "price_range": Object {
+                "maximum_price": Object {
+                  "final_price": Object {
+                    "currency": "USD",
+                    "value": 100,
+                  },
+                },
+              },
+              "sku": "sku-test-product1",
+              "small_image": Object {
+                "url": "/test/product/1.png",
+              },
+              "stock_status": "IN_STOCK",
+              "type_id": "simple",
+              "url_key": "test-product1",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="root"
+    >
+      <div
+        className="root container"
+      >
+        <img
+          alt="Test Product 2"
+          aria-hidden="true"
+          className="image placeholder_layoutOnly"
+          height={375}
+          loading="eager"
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjUiIHZpZXdCb3g9Ii0yNSAtMjUgMzEyIDMxMiI+CiAgICA8ZyBpZD0iTGF5ZXJfMi0yIj4KICAgICAgICA8cGF0aCBjbGFzcz0ic3QwIiBzdHlsZT0iZmlsbDogI2YwZjBmMDsgZmlsbC1ydWxlOiBldmVub2RkOyIgZD0iTTM2LDE4OS40di0xMDkuMWMwLTAuNywwLjQtMS42LDEuMS0ybDk0LjctNTcuMWMwLjctMC41LDEuNy0wLjUsMi41LDBsOTEuNSw1N2MwLjcsMC40LDEuMSwxLjEsMS4xLDJ2MTA3LjljMCwwLjctMC40LDEuNS0xLjEsMmwtMTkuMywxMi42Yy0xLjUsMS0zLjYsMC0zLjYtMnYtMTA1LjljMC0wLjctMC40LTEuNi0xLjEtMmwtNjcuNS00MS4zYy0wLjctMC41LTEuNi0wLjUtMi4zLDBsLTY5LjYsNDEuM2MtMC43LDAuNC0xLjEsMS4xLTEuMSwydjEwNS45YzAsMS45LTIsMy0zLjYsMmwtMjEuNS0xMy41aDB2LjJaTTg2LDExMC45djEwNi4zYzAsMC45LDAuNCwxLjYsMS4xLDJsNDQuNSwyNi43YzAuNywwLjUsMS43LDAuNCwyLjUsMGw0Mi41LTI2LjdjMC43LTAuNCwxLjEtMS4xLDEuMS0ydi0xMDUuOGMwLTAuNy0wLjQtMS41LTEuMS0ybC0yOC43LTE3LjljLTEuNS0xLTMuNiwwLjEtMy42LDJ2MTIxLjZjMCwwLjctMC40LDEuNS0xLjEsMmwtOS4zLDUuOWMtMC43LDAuNS0xLjYsMC41LTIuMywwbC0xMS4xLTUuOWMtMC43LTAuNC0xLjItMS4yLTEuMi0yLjF2LTEyMS43YzAtMS43LTItMy0zLjUtMmwtMjguOCwxNi4yYy0wLjcsMC40LTEuMSwxLjEtMS4xLDJ2MS41aC4xWiIvPgogICAgPC9nPgo8L3N2Zz4K"
+          style={
+            Object {
+              "--height": "375px",
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+        <img
+          alt="Test Product 2"
+          className="image loaded"
+          loading="lazy"
+          onError={[MockFunction]}
+          onLoad={[MockFunction]}
+          sizes="(max-width: 640px) 300px, 840px"
+          src="/test/product/2.png"
+          srcSet="/test/product/2.png 40w,
+/test/product/2.png 80w,
+/test/product/2.png 160w,
+/test/product/2.png 320w,
+/test/product/2.png 640w,
+/test/product/2.png 960w,
+/test/product/2.png 1280w,
+/test/product/2.png 1600w,
+/test/product/2.png 2560w"
+          style={
+            Object {
+              "--width": "100px",
+            }
+          }
+          width={100}
+        />
+      </div>
+      <span>
+        Test Product 2
+      </span>
+      <div
+        className="price"
+      >
+        <span>
+          $
+        </span>
+        <span>
+          100
+        </span>
+        <span>
+          .
+        </span>
+        <span>
+          00
+        </span>
+      </div>
+      <div
+        className="actionsContainer"
+      >
+         
+        <mock-AddToCartButton
+          item={
+            Object {
+              "__typename": "SimpleProduct",
+              "id": 2,
+              "name": "Test Product 2",
+              "price_range": Object {
+                "maximum_price": Object {
+                  "final_price": Object {
+                    "currency": "USD",
+                    "value": 100,
+                  },
+                },
+              },
+              "sku": "sku-test-product2",
+              "small_image": Object {
+                "url": "/test/product/2.png",
+              },
+              "stock_status": "OUT_OF_STOCK",
+              "type_id": "simple",
+              "url_key": "test-product2",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders if \`items\` is an empty array 1`] = `
+<div
+  aria-busy="false"
+  className="root"
+>
+  <div
+    className="items"
+  />
+</div>
+`;

@@ -1,0 +1,26 @@
+.root {
+}
+
+.error {
+    composes: text-error from global;
+}
+
+div[data-braintree-id='card'] {
+    @apply border-0;
+}
+
+div[data-braintree-id='card-sheet-header'] {
+    @apply hidden;
+}
+
+div[class*='braintree-sheet__content--form'] {
+    /**
+      This is needed to override padding on the dropin
+      component. If we use padding-top instead it just
+      overrides the padding-top not whole padding.
+    */
+    @apply pt-4;
+    @apply pr-0;
+    @apply pb-0;
+    @apply pl-0;
+}

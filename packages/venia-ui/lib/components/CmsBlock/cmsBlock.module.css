@@ -1,0 +1,17 @@
+.root {
+    composes: m-xs from global;
+}
+
+.content h2 {
+    @apply mb-8;
+    @apply text-center;
+    @apply uppercase;
+}
+
+.content img {
+    @apply block;
+    @apply h-auto;
+    @apply w-auto;
+    @apply max-h-full;
+    @apply max-w-full;
+}

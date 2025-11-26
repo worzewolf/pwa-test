@@ -1,0 +1,55 @@
+.root {
+    composes: grid from global;
+    grid-template-columns: minmax(auto, 512px);
+    composes: justify-center from global;
+    composes: gap-y-md from global;
+    composes: text-center from global;
+}
+
+.root_hidden {
+    composes: root;
+
+    @apply hidden;
+}
+
+.header {
+    composes: font-serif from global;
+}
+
+.contentContainer {
+    composes: border-0 from global;
+    composes: p-0 from global;
+    composes: rounded-box from global;
+
+    composes: lg_border-2 from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-subtle from global;
+    composes: lg_p-md from global;
+}
+
+.signInRoot {
+    composes: root from '../../SignIn/signIn.module.css';
+
+    @apply px-0;
+    @apply py-xs;
+
+    @apply lg_p-0;
+}
+
+.forgotPasswordRoot {
+    composes: root from '../../ForgotPassword/forgotPassword.module.css';
+
+    @apply px-0;
+    @apply py-xs;
+
+    @apply lg_p-0;
+}
+
+.createAccountRoot {
+    composes: root from '../../CreateAccount/createAccount.module.css';
+
+    @apply px-0;
+    @apply py-xs;
+
+    @apply lg_p-0;
+}

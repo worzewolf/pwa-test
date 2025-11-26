@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handle submit event should dispatch create account event 1`] = `
+Object {
+  "payload": Object {
+    "email": "bender@planet.express",
+    "firstName": "Bender",
+    "isSubscribed": false,
+    "lastName": "Rodriguez",
+  },
+  "type": "USER_CREATE_ACCOUNT",
+}
+`;
+
+exports[`should return properly 1`] = `
+Object {
+  "errors": Map {
+    "createAccountQuery" => null,
+    "signInMutation" => null,
+  },
+  "handleEnterKeyPress": [Function],
+  "handleSubmit": [Function],
+  "initialValues": Object {
+    "customer": Object {
+      "email": "gooston@goosemail.com",
+      "firstname": "Gooseton",
+      "lastname": "Jr",
+    },
+    "userName": "gooseton",
+  },
+  "isDisabled": false,
+  "minimumPasswordLength": 8,
+  "recaptchaWidgetProps": Object {},
+}
+`;

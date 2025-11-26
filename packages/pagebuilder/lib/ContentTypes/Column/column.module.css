@@ -1,0 +1,9 @@
+.root {
+}
+
+@media only screen and (max-width: 768px) {
+    .root {
+        @apply !bg-scroll;
+        @apply basis-full;
+    }
+}

@@ -1,0 +1,8 @@
+.root {
+    composes: empty_hidden from global;
+}
+
+.root_inline {
+    composes: root;
+    @apply inline-block;
+}
