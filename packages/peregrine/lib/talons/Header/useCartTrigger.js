@@ -35,6 +35,7 @@ export const useCartTrigger = props => {
     const [isHidden, setIsHidden] = useState(() =>
         DENIED_MINI_CART_ROUTES.includes(location.pathname)
     );
+    const [itemCount, setItemCount] = useState(null);
 
     const {
         elementRef: miniCartRef,
@@ -52,7 +53,25 @@ export const useCartTrigger = props => {
         errorPolicy: 'all'
     });
 
-    const itemCount = data?.cart?.total_summary_quantity_including_config || 0;
+    const offlineAddToCartData = localStorage.getItem('offlineAddToCart');
+    const parsedOfflineAddToCartData = offlineAddToCartData && JSON.parse(offlineAddToCartData);
+
+    useEffect(() => {
+        if (parsedOfflineAddToCartData) {
+            let addedOfflineItemsQty = null;
+
+            parsedOfflineAddToCartData.map((item) => {
+                addedOfflineItemsQty = addedOfflineItemsQty + item.product.quantity
+            })
+
+            setItemCount(
+                addedOfflineItemsQty + data?.cart?.total_summary_quantity_including_config ||
+                addedOfflineItemsQty + 0
+            )
+        } else {
+            setItemCount(data?.cart?.total_summary_quantity_including_config || 0);
+        }
+    }, [data?.cart?.total_summary_quantity_including_config, parsedOfflineAddToCartData]);
 
     const handleTriggerClick = useCallback(() => {
         // Open the mini cart.

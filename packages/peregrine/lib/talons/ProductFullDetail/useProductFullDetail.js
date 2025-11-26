@@ -1,4 +1,4 @@
-import { useCallback, useState, useMemo } from 'react';
+import { useCallback, useState, useMemo, useEffect } from 'react';
 import { useIntl } from 'react-intl';
 import { useMutation, useQuery, gql } from '@apollo/client';
 import { useCartContext } from '@magento/peregrine/lib/context/cart';
@@ -15,6 +15,7 @@ import { useEventingContext } from '../../context/eventing';
 import { getOutOfStockVariants } from '@magento/peregrine/lib/util/getOutOfStockVariants';
 import { useAwaitQuery } from '@magento/peregrine/lib/hooks/useAwaitQuery';
 import BrowserPersistence from '../../util/simplePersistence';
+import { useAppContext } from '../../context/app';
 
 const INITIAL_OPTION_CODES = new Map();
 const INITIAL_OPTION_SELECTIONS = new Map();
@@ -247,6 +248,7 @@ export const useProductFullDetail = props => {
         product
     } = props;
 
+    const [appState, ] = useAppContext();
     const [, { dispatch }] = useEventingContext();
 
     const hasDeprecatedOperationProp = !!(
@@ -528,7 +530,35 @@ export const useProductFullDetail = props => {
                     const ensuredCartId = await ensureCartId();
                     variables.cartId = ensuredCartId;
 
-                    await addProductToCart({ variables });
+                    const dataToStore = {
+                        ...variables,
+                        prices: {
+                            price: {
+                                currency: product.price.regularPrice.amount.currency,
+                                value: product.price.regularPrice.amount.value
+                            }
+                        },
+                        product: {
+                            ...variables.product,
+                            uid: product.uid,
+                            name: product.name,
+                            price: product.price,
+                            url_key: product.url_key,
+                            stock_status: product.stock_status,
+                            thumbnail: {
+                                url: product.small_image,
+                                __typename: "ProductImage"
+                            },
+                        }
+                    }
+
+                    await addProductToCart({ variables })
+                        .catch(() => {
+                            // if error occur, this may happen because of missing internet connection
+                            // then we try to store data in local storage
+                            localStorage.setItem('offlineAddToCartQuery', JSON.stringify(variables));
+                            localStorage.setItem('offlineAddToCart', JSON.stringify([dataToStore]));
+                        });
 
                     const selectedOptionsLabels =
                         selectedOptionsArray?.map((uid, i) => ({
@@ -643,6 +673,56 @@ export const useProductFullDetail = props => {
         item: wishlistItemOptions,
         storeConfig: storeConfigData ? storeConfigData.storeConfig : {}
     };
+
+    const {hasBeenOffline, isOnline} = appState;
+
+    const handleAddToCartOfflineProduct = useCallback(async (variables, parsedOfflineAddToCartData) => {
+        try {
+            if (!parsedOfflineAddToCartData || !variables) return;
+
+            await addProductToCart({ variables });
+
+            parsedOfflineAddToCartData.map((item) => {
+                dispatch({
+                    type: 'CART_ADD_ITEM',
+                    payload: {
+                        cartId: item.cartId,
+                        sku: item.product.sku,
+                        name: item.product.name,
+                        pricing: item.product.price,
+                        priceTotal: productPrice.final_price.value,
+                        currencyCode: productPrice.final_price.currency,
+                        discountAmount: productPrice.discount.amount_off,
+                        selectedOptions: [],
+                        quantity: item.product.quantity,
+                    }
+                });
+            });
+
+            // IMPORTANT: clear storage so it doesn't repeat
+            localStorage.removeItem('offlineAddToCartQuery');
+            localStorage.removeItem('offlineAddToCart');
+        } catch {
+            return;
+        }
+    }, [productPrice, dispatch, addProductToCart]);
+
+    useEffect(() => {
+        if (!hasBeenOffline || !isOnline) return;
+
+        const offlineQuery = localStorage.getItem('offlineAddToCartQuery');
+        const offlineAddToCart = localStorage.getItem('offlineAddToCart');
+
+        if (!offlineQuery || !offlineAddToCart) return;
+
+        const parsedOfflineQuery = JSON.parse(offlineQuery);
+        const parsedOfflineAddToCart = JSON.parse(offlineAddToCart);
+
+        // run sync
+        handleAddToCartOfflineProduct(parsedOfflineQuery, parsedOfflineAddToCart)
+            .catch(err => console.error(err));
+
+    }, [hasBeenOffline, isOnline, handleAddToCartOfflineProduct]);
 
     return {
         breadcrumbCategoryId,

@@ -31,6 +31,8 @@ import { useEventingContext } from '../../context/eventing';
 export const useMiniCart = props => {
     const { isOpen, setIsOpen } = props;
 
+    const offlineAddToCartData = localStorage.getItem('offlineAddToCart');
+    const parsedOfflineAddToCartData = offlineAddToCartData && JSON.parse(offlineAddToCartData);
     const [, { dispatch }] = useEventingContext();
 
     const operations = mergeOperations(DEFAULT_OPERATIONS, props.operations);
@@ -81,21 +83,67 @@ export const useMiniCart = props => {
 
     const totalQuantity = useMemo(() => {
         if (!miniCartLoading) {
-            return miniCartData?.cart?.total_quantity;
+            let addedOfflineItemsQty = null;
+            if (parsedOfflineAddToCartData) {
+
+                parsedOfflineAddToCartData.map((item) => {
+                    addedOfflineItemsQty = addedOfflineItemsQty + item.product.quantity
+                })
+
+                return miniCartData?.cart?.total_quantity + addedOfflineItemsQty;
+            } else {
+                return miniCartData?.cart?.total_quantity;
+            }
         }
-    }, [miniCartData, miniCartLoading]);
+    }, [miniCartData, miniCartLoading, parsedOfflineAddToCartData]);
 
     const subTotal = useMemo(() => {
         if (!miniCartLoading) {
-            return miniCartData?.cart?.prices?.subtotal_excluding_tax;
+            if (!parsedOfflineAddToCartData?.length) return miniCartData?.cart?.prices?.subtotal_excluding_tax;
+
+            return {
+                currency: miniCartData?.cart?.prices?.subtotal_excluding_tax.currency,
+                value: miniCartData?.cart?.prices?.subtotal_excluding_tax.value + parsedOfflineAddToCartData[0].prices.price.value,
+            }
         }
-    }, [miniCartData, miniCartLoading]);
+    }, [miniCartData, miniCartLoading, parsedOfflineAddToCartData]);
 
     const productList = useMemo(() => {
         if (!miniCartLoading) {
-            return miniCartData?.cart?.items;
+            const items = miniCartData?.cart?.items || [];
+            const offlineItems = parsedOfflineAddToCartData || [];
+
+            if (!offlineItems.length) return items;
+
+            let updatedItems = [...items];
+
+            offlineItems.forEach(offlineItem => {
+                const matchIndex = updatedItems.findIndex(
+                    item => item.product.uid === offlineItem.product.uid
+                );
+                if (matchIndex !== -1) {
+                    // MATCH FOUND → sum quantity
+                    updatedItems[matchIndex] = {
+                        ...updatedItems[matchIndex],
+                        quantity:
+                            updatedItems[matchIndex].quantity +
+                            offlineItem.product.quantity
+                    };
+                } else {
+                    // NO MATCH → push offline item to minicart
+                    updatedItems.push({
+                        prices: offlineItem.prices,
+                        uid: offlineItem.product.uid,
+                        sku: offlineItem.product.sku,
+                        product: offlineItem.product,
+                        quantity: offlineItem.product.quantity
+                    });
+                }
+            });
+
+            return updatedItems;
         }
-    }, [miniCartData, miniCartLoading]);
+    }, [miniCartData, miniCartLoading, parsedOfflineAddToCartData]);
 
     const closeMiniCart = useCallback(() => {
         setIsOpen(false);
